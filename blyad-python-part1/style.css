@@ -1,0 +1,44 @@
+@font-face {
+    font-family: logoFont;
+    src: url(https://nacchip.github.io/files/fonts/arco.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-family: logoFont;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #555;
+  }

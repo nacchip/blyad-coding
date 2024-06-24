@@ -1,2 +1,0 @@
-# blyad-coding
-hz
