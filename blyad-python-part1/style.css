@@ -59,3 +59,14 @@ body {
   position: absolute;
   bottom: 1%;
 }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.nice_watch {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: logoFont;
+}
