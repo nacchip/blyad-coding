@@ -37,7 +37,6 @@ body {
     display: inline-block;
     margin-left: 20px;
   }
-  
   .nav a {
     text-decoration: none;
     color: #555;
@@ -45,5 +44,5 @@ body {
   .center {
     margin-left: auto;
     margin-right: auto;
-    display: block
-}
+    display: block;
+  }
