@@ -1,0 +1,124 @@
+@font-face {
+    font-family: logoFont;
+    src: url(https://nacchip.github.io/files/fonts/arco.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-family: logoFont;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .mini_title {
+    font-family: logoFont;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: url("images/hero-bg.jpg"); /* Замени на свой фон */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* Кнопки */
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid #337ab7;
+    color: #337ab7;
+  }
+  
+  /* Courses section */
+  .courses {
+    padding: 80px 0;
+  }
+  
+  .courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .course {
+    width: 30%; /* Можно настроить под себя */
+    margin-bottom: 30px;
+  }
+  
+  .course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .course h3 {
+    margin-top: 10px;
+  }
+  
+  .course p {
+    margin-bottom: 15px;
+  }
+  
+  /* About section */
+  .about {
+    padding: 80px 0;
+  }
+  .banner {
+    width: 100%;
+  }
