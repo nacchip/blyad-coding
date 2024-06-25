@@ -4,7 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Курсы BLYAD CODING</title>
-  <link rel="stylesheet" href="style.css"> 
+  <style>
+@font-face {
+    font-family: logoFont;
+    src: url(https://nacchip.github.io/files/fonts/arco.ttf);
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+.logo {
+    font-family: logoFont;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+.mini_title {
+    font-family: logoFont;
+}
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: #555;
+}
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+.hero h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn {
+  transition: 0.7s;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  transition: 0.7s;
+  background-color: #fff;
+  color: #337ab7;
+  border: 1px solid #337ab7;
+}
+.btn-outline:hover {
+  transition: 0.7s;
+  background-color: #337ab7;
+  color: #fff;
+}
+.btn-outline {
+  transition: 0.7s;
+  background-color: transparent;
+  border: 1px solid #337ab7;
+  color: #337ab7;
+}
+.courses {
+    padding: 80px 0;
+}
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course {
+    width: 30%;
+    margin-bottom: 30px;
+}
+.course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.course h3 {
+    margin-top: 10px;
+}
+.course p {
+    margin-bottom: 15px;
+}
+.about {
+    padding: 80px 0;
+}
+.banner {
+    width: 100%;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.discord_logo {
+  transition: 0.7s;
+  filter: invert(100%) sepia(3%) saturate(7414%) hue-rotate(44deg) brightness(120%) contrast(103%);
+}
+  </style>
 </head>
 <body>
 
@@ -35,17 +159,22 @@
       <h2 class="mini_title">Наши курсы</h2>
       <div class="courses-grid">
         <div class="course">
-          <img src="images/course1.jpg" alt="лого курса 1">
-          <h3><a href="blyad-python-part1">BLYAD PYTHON (Часть 1)</a></h3>
-          <p>В данном курсе два молодых чебурека Денчик и Андреф очень профиссионально помогут тебе изучить Python</p>
-          <a href="blyad-python-part1" class="btn btn-outline">Подробнее</a>
+          <a href="blyad-python-part1">
+            <img src="images/course1.jpg" alt="лого курса 1">
+            <h3>BLYAD PYTHON (Часть 1)</h3>
+            <p>В данном курсе два молодых чебурека Денчик и Андреф очень профиссионально помогут тебе изучить Python</p>
+            <button class="btn btn-outline">Подробнее</button>
+          </a>
         </div>
         <div class="course">
-          <img src="images/course2.jpg" alt="Лого курса 2">
-          <h3><a href="blyad-python-part2">BLYAD PYTHON (Часть 2)</a></h3>
-          <p>В данном курсе два молодых чебурека Денчик и Андреф очень профиссионально помогут тебе изучить Python</p>
-          <a href="blyad-python-part2" class="btn btn-outline">Подробнее</a>
+          <a href="blyad-python-part2">
+            <img src="images/course2.jpg" alt="Лого курса 2">
+            <h3>BLYAD PYTHON (Часть 2)</h3>
+            <p>В данном курсе два молодых чебурека Денчик и Андреф очень профиссионально помогут тебе изучить Python</p>
+            <button class="btn btn-outline">Подробнее</button>
+          </a>
         </div>
+      </a>
         </div>
     </div>
   </section>
@@ -57,11 +186,29 @@
     </div>
   </section>
 
+  <section id="contacts" class="about">
+    <div class="container">
+      <h2 class="mini_title">Контакты</h2>
+      <a href="https://discord.com/channels/1254810387522519161/1254810388034359327" class="btn" id="discord_button"><img width="25px" src="C:\Users\andre\OneDrive\Документы\GitHub\blyad-coding\files\photo\discord.svg" id="discord_logo" class="discord_logo">&nbsp;&nbsp;discrord сервер</a>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <p>&copy; 1488 BLYAD CODING. All rights reserved</p>
     </div>
   </footer>
-
+<script>
+let discord_button = document.getElementById("discord_button");
+let discord_logo = document.getElementById("discord_logo");
+discord_button.onmouseover = function (e) {
+  //alert("over!")
+  discord_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)"
+}
+discord_button.onmouseout = function (e) {
+  //alert("out!")
+  discord_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)"
+}
+</script>
 </body>
 </html>
