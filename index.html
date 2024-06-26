@@ -124,7 +124,7 @@ body {
     padding: 20px 0;
     text-align: center;
 }
-.discord_logo {
+.contacts_logo {
   position: absolute;
   transition: 0.7s;
   filter: invert(100%) sepia(3%) saturate(7414%) hue-rotate(44deg) brightness(120%) contrast(103%);
@@ -190,7 +190,8 @@ body {
   <section id="contacts" class="about">
     <div class="container">
       <h2 class="mini_title">Контакты</h2>
-      <a href="https://discord.com/channels/1254810387522519161/1254810388034359327" class="btn" id="discord_button"><img width="25px" src="/blyad-coding/files/photo/discord.svg" id="discord_logo" class="discord_logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;discrord сервер</a>
+      <a href="https://discord.com/channels/1254810387522519161/1254810388034359327" target="_blank" class="btn" id="discord_button"><img width="25px" src="/blyad-coding/files/photo/discord.svg" id="discord_logo" class="contacts_logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;discrord сервер</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank" class="btn" id="youtube_button"><img width="25px" src="/blyad-coding/files/photo/youtube.svg" id="youtube_logo" class="contacts_logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube канал</a>
     </div>
   </section>
 
@@ -202,13 +203,19 @@ body {
 <script>
 let discord_button = document.getElementById("discord_button");
 let discord_logo = document.getElementById("discord_logo");
+let youtube_button = document.getElementById("youtube_button");
+let youtube_logo = document.getElementById("youtube_logo");
 discord_button.onmouseover = function (e) {
-  //alert("over!")
   discord_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)"
 }
 discord_button.onmouseout = function (e) {
-  //alert("out!")
   discord_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)"
+}
+youtube_button.onmouseover = function (e) {
+  youtube_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)"
+}
+youtube_button.onmouseout = function (e) {
+  youtube_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)"
 }
 </script>
 </body>
