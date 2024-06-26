@@ -6,16 +6,25 @@
   <title>Курсы BLYAD CODING</title>
   <style>
 @font-face {
-    font-family: logoFont;
-    src: url(https://nacchip.github.io/files/fonts/arco.ttf);
+  font-family: logoFont;
+  src: url(https://nacchip.github.io/files/fonts/arco.ttf);
 }
 a {
   color: #000;
   text-decoration: none;
 }
+img {
+  -webkit-user-drag: none;
+}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 .container {
     max-width: 960px;
@@ -149,7 +158,7 @@ body {
   <section id="hero" class="hero">
     <div class="container">
       <div class="hero-content">
-        <img src="files/photo/banner.png" class="banner" alt="баннер"><br><br><br>
+        <img src="files/photo/banner.png" class="banner" alt="баннер" draggable="false"><br><br><br>
         <a href="#courses" class="btn">Посмотреть курсы</a>
       </div>
     </div>
@@ -161,7 +170,7 @@ body {
       <div class="courses-grid">
         <div class="course">
           <a href="blyad-python-part1">
-            <img src="images/course1.jpg" alt="лого курса 1">
+            <img src="images/course1.jpg" alt="лого BLYAD PYTHON" draggable="false">
             <h3>BLYAD PYTHON (Часть 1)</h3>
             <p>В данном курсе два молодых чебурека Денчик и Андреф очень профиссионально помогут тебе изучить Python</p>
             <button class="btn btn-outline">Подробнее</button>
@@ -169,7 +178,7 @@ body {
         </div>
         <div class="course">
           <a href="blyad-python-part2">
-            <img src="images/course2.jpg" alt="Лого курса 2">
+            <img src="images/course2.jpg" alt="лого BLYAD PYTHON" draggable="false">
             <h3>BLYAD PYTHON (Часть 2)</h3>
             <p>В данном курсе два молодых чебурека Денчик и Андреф очень профиссионально помогут тебе изучить Python</p>
             <button class="btn btn-outline">Подробнее</button>
@@ -190,8 +199,8 @@ body {
   <section id="contacts" class="about">
     <div class="container">
       <h2 class="mini_title">Контакты</h2>
-      <a href="https://discord.com/channels/1254810387522519161/1254810388034359327" target="_blank" class="btn" id="discord_button"><img width="25px" src="/blyad-coding/files/photo/discord.svg" id="discord_logo" class="contacts_logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;discrord сервер</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank" class="btn" id="youtube_button"><img width="25px" src="/blyad-coding/files/photo/youtube.svg" id="youtube_logo" class="contacts_logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube канал</a>
+      <a href="https://discord.com/channels/1254810387522519161/1254810388034359327" target="_blank" class="btn" id="discord_button"><img width="25px" src="/blyad-coding/files/photo/discord.svg" id="discord_logo" class="contacts_logo" draggable="false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;discrord сервер</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank" class="btn" id="youtube_button"><img width="25px" src="/blyad-coding/files/photo/youtube.svg" id="youtube_logo" class="contacts_logo" draggable="false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube канал</a>
     </div>
   </section>
 
