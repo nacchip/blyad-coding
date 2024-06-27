@@ -168,7 +168,7 @@ body {
     <div class="container">
       <h2 class="mini_title">Наши курсы</h2>
       <div class="courses-grid">
-        <div class="course">
+        <div class="course" id="course">
           <a href="blyad-python-part1">
             <img src="files/photo/blyad_python_banner.png" width="30%" alt="лого BLYAD PYTHON" draggable="false">
             <h3>BLYAD PYTHON (Часть 1)</h3>
@@ -176,7 +176,7 @@ body {
             <button class="btn btn-outline">Подробнее</button>
           </a>
         </div>
-        <div class="course">
+        <div class="course" id="course">
           <a href="blyad-python-part2">
             <img src="files/photo/blyad_python_banner.png" width="30%" alt="лого BLYAD PYTHON" draggable="false">
             <h3>BLYAD PYTHON (Часть 2)</h3>
@@ -214,17 +214,22 @@ let discord_button = document.getElementById("discord_button");
 let discord_logo = document.getElementById("discord_logo");
 let youtube_button = document.getElementById("youtube_button");
 let youtube_logo = document.getElementById("youtube_logo");
+let course = document.getElementById("course");
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+  course.style.width = "99%"
+}
+
 discord_button.onmouseover = function (e) {
-  discord_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)"
+  discord_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)";
 }
 discord_button.onmouseout = function (e) {
-  discord_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)"
+  discord_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)";
 }
 youtube_button.onmouseover = function (e) {
-  youtube_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)"
+  youtube_logo.style.filter = "invert(48%) sepia(10%) saturate(2759%) hue-rotate(166deg) brightness(89%) contrast(99%)";
 }
 youtube_button.onmouseout = function (e) {
-  youtube_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)"
+  youtube_logo.style.filter = "invert(99%) sepia(99%) saturate(3%) hue-rotate(201deg) brightness(108%) contrast(100%)";
 }
 </script>
 </body>
